@@ -9,11 +9,11 @@ function validateSyntax() {
   const validSyntax = /^pet_[0-9]{4}[a-zA-Z0-9]+$/;
 
   if (validSyntax.test(input)) {
-    result = "Valid Syntax";
+    result = 'Valid Syntax <span class="valid"></span>';
   } else {
-    result = "Invalid Syntax";
+    result = 'Invalid Syntax <span class="invalid"></span>';
   }
 
-  document.getElementById("result").innerText = result;
+  document.getElementById("result").innerHTML = result;
 }
 
